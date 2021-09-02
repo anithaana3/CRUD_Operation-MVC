@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HMS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/nouislider/nouislider.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/directory/1-2/css/style.default.4c2f3e59.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/directory/1-2/css/custom.0a822280.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJTTGPdw60PEcsj41M2koT4HWFtDrRVS65dy6BG7uIo_rbS3iV4w">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 12px;">
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+            <div class="container-fluid">
+
+                <div class="d-flex align-items-center">
+                    <a href="index.html" class="navbar-brand py-1"><img src="https://static-news.moneycontrol.com/static-mcnews/2017/12/Shalby_Hospital-770x433.jpg" alt="Taxi logo" height="40" width="80"></a>
+                </div>
+                <h3>  Customer Management System </h3>
+                @*<h1> @RenderBody() </h1>*@
+
+                <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="contact.html" class="nav-link">@Html.ActionLink("Home", "Home", "HMS")</a> &nbsp; &nbsp; &nbsp;</li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">@Html.ActionLink("About", "About", "HMS")</a> &nbsp; &nbsp; &nbsp;</li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">@Html.ActionLink("Contact", "Contact", "HMS")</a> &nbsp;&nbsp;&nbsp;</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <br />
+        <br />
+        <br />
+        <h1> @RenderBody() </h1>
+    </div>
+   
+
+    <script>
+        function injectSvgSprite(path) {
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function (e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        injectSvgSprite('https://demo.bootstrapious.com/directory/1-1/icons/orion-svg-sprite.svg');
+    </script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-2/vendor/object-fit-images/ofi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script>var basePath = ''</script>
+    <script src="js/theme.630a017a.js"></script>
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Chrome","requestId":"3a1db32f16f949b9ac83a7b5be661e4e"}
+    </script>
+    <script type="text/javascript" src="http://localhost:61389/2f0adaf1e68b4ebf82ae81f43558617a/browserLink" async="async"></script>
+</body>
+
+</html>
+

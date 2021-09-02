@@ -1,0 +1,66 @@
+﻿@model Customer_Management_System.Models.CustomerInfo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 style="text-align:right"> @Html.ActionLink("Home", "Index")</h3>
+<div>
+    <h3 style="color:Blue;">Hello @Html.DisplayFor(model => model.CustName), here is your info</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobile_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobile_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email_Id)
+        </dd>
+
+    </dl>
+</div>
+<div style="text-align : right">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cust_Id }) ||
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Customer_Management_System.Models.CustomerInfo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h3 style="text-align:right"> @Html.ActionLink("Add New Customer", "Create") </h3>
+<h2>Customers List </h2>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Cust_Id)
+        </th>
+        *@
+        <th>
+            @Html.DisplayNameFor(model => model.CustName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile_No)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email_Id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*
+        <td>
+            @Html.DisplayFor(modelItem => item.Cust_Id)
+        </td>
+        *@
+        <td>
+            @Html.DisplayFor(modelItem => item.CustName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile_No)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email_Id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Cust_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Cust_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Cust_Id })
+        </td>
+    </tr>
+}
+
+</table>
